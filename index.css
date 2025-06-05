@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(124, 59, 70, 0.953);
+}
+body #central-wrapper {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #central-wrapper #game {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(46, 89, 110);
+  border: none;
+  font-family: "Luckiest Guy", cursive;
+  transition: 0.3s ease-in-out;
+}
+body #central-wrapper #game:hover {
+  background-color: gray;
+}
+body #central-wrapper .partials-1 {
+  background-color: pink;
+  height: 500px;
+  width: 300px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #central-wrapper .partials-1 h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(19, 17, 17);
+  font-size: 3rem;
+  font-weight: 500;
+}
+body #central-wrapper .partials-1 #h1-s {
+  font-size: 3rem;
+  font-family: "Luckiest Guy", cursive;
+}
+body #central-wrapper .partials-1 .current-score {
+  background-color: rgba(124, 59, 70, 0.953);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+body #central-wrapper .partials-2 {
+  background-color: rgb(215, 120, 136);
+  height: 500px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+body #central-wrapper .partials-2 h2 {
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(19, 17, 17);
+  font-size: 3rem;
+  font-weight: 500;
+}
+body #central-wrapper .partials-2 #h2-s {
+  font-size: 3rem;
+  font-family: "Luckiest Guy", cursive;
+}
+body #central-wrapper .partials-2 .current-score {
+  background-color: rgba(124, 59, 70, 0.953);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
