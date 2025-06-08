@@ -36,12 +36,13 @@ body{
     #central-wrapper{
         margin-top: 10rem;
         @include center();
-       #btn-wrapper, .yetAnotherWrapper{
+        #btn-wrapper, .yetAnotherWrapper{
         position: absolute;
         @include column();
         gap: 7rem;
+        margin-right: 5rem;
+        margin-top: 2rem;
        
-       }
         #game, .game-btn{
            // position: absolute;
             width: 100px;
@@ -52,12 +53,14 @@ body{
             border: none;
             font-family: $font;
             transition: 0.3s ease-in-out;
+            
            
 
             &:hover{
                 background-color: gray;
             }
         }
+       }
         .partials-1{
            background-color: $color1;
            height: 500px;
