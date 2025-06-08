@@ -12,8 +12,16 @@ body #central-wrapper {
   justify-content: center;
   align-items: center;
 }
-body #central-wrapper #game {
+body #central-wrapper #btn-wrapper, body #central-wrapper .yetAnotherWrapper {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 7rem;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+body #central-wrapper #btn-wrapper #game, body #central-wrapper #btn-wrapper .game-btn, body #central-wrapper .yetAnotherWrapper #game, body #central-wrapper .yetAnotherWrapper .game-btn {
   width: 100px;
   height: 30px;
   border-radius: 10px;
@@ -23,7 +31,7 @@ body #central-wrapper #game {
   font-family: "Luckiest Guy", cursive;
   transition: 0.3s ease-in-out;
 }
-body #central-wrapper #game:hover {
+body #central-wrapper #btn-wrapper #game:hover, body #central-wrapper #btn-wrapper .game-btn:hover, body #central-wrapper .yetAnotherWrapper #game:hover, body #central-wrapper .yetAnotherWrapper .game-btn:hover {
   background-color: gray;
 }
 body #central-wrapper .partials-1 {
