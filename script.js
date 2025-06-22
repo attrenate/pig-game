@@ -1,16 +1,34 @@
-const newGame = document.getElementById("game");
-newGame.addEventListener('click', resetGame);
 
-const score1 = document.getElementById('h1-s');
-const score2 = document.getElementById('h2-s');
-const currentScores = document.querySelectorAll('.current-score');
+let activePlayer = 1;        
+const diceRolls = [];
 
-// A function to reset the values 
-function resetGame(){
-    score1.textContent = '0';
-    score2.textContent = '0';
+function rollDice() {
+  const number = Math.floor(Math.random() * 6) + 1;
+  console.log('dice has been rolled:', number);
 
-    currentScores.forEach(score => {
-    score.innerHTML = 'Current <br> 0';
-  });
+  // Get the active player's score element
+  const playerScore = document.getElementById(`h${activePlayer}-s`);
+  let currentScore = parseInt(playerScore.textContent) || 0;
+
+  if (number === 1) {
+    console.log("opponent's turn.");
+    diceRolls.length = 0;               
+    playerScore.textContent = 0;       
+    switchPlayer();                    
+  } else {
+    playerScore.textContent = currentScore + number;
+    diceRolls.push(number);            
+  }
+
+  return number;
 }
+
+function switchPlayer() {
+  activePlayer = activePlayer === 1 ? 2 : 1;
+  
+  document.getElementById('player1-panel').classList.toggle('active', activePlayer === 1);
+  document.getElementById('player2-panel').classList.toggle('active', activePlayer === 2);
+}
+
+
+document.getElementById('roll').addEventListener('click', rollDice);
